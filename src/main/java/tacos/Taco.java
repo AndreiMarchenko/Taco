@@ -1,8 +1,12 @@
 package tacos;
 
 import lombok.Data;
+import lombok.RequiredArgsConstructor;
+
+import java.util.List;
 
 @Data
 public class Taco {
-    Ingredient[] ingredients;
+    private String name;
+    private List<String> ingredients;
 }
